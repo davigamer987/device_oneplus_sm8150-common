@@ -4,25 +4,14 @@ persist.vendor.audio.hac.enable=false
 ro.audio.monitorRotation=true
 
 # Bluetooth
-bt.max.hfpclient.connections=1
-vendor.bluetooth.soc=cherokee
+persist.vendor.btstack.enable.lpa=true
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.bt.a2dp.aac_whitelist=false
 
 # Bluetooth
 persist.vendor.btstack.enable.lpa=true
 persist.vendor.btstack.enable.twsplus=true
 persist.vendor.bt.a2dp.aac_whitelist=false
-persist.vendor.bt.a2dp.hal.implementation=true
-ro.bluetooth.library_name=libbluetooth_qti.so
-<<<<<<< HEAD
-=======
-
-# Camera
-persist.camera.assert.panic=true
-persist.camera.privapp.list=com.oneplus.factorymode,com.oneplus.camera,com.oem.autotest,com.oneplus.healthcheck
-persist.vendor.camera.privapp.list=com.oneplus.factorymode,com.oneplus.camera,com.oem.autotest,com.oneplus.healthcheck
-ro.opcamera.support=true
-vendor.camera.aux.packagelist=com.oneplus.factorymode,com.oneplus.camera,com.oem.autotest,com.oneplus.healthcheck
->>>>>>> parent of 6f0124c (sm8150-common: Switch to AOSP bt)
 
 # Charger
 ro.charger.enable_suspend=true
@@ -96,7 +85,6 @@ persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 
 # Blur
-ro.launcher.blur.appLaunch=0
 ro.surface_flinger.supports_background_blur=1
 persist.sys.sf.disable_blurs=1
 ro.sf.blurs_are_expensive=1
